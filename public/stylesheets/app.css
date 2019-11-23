@@ -1,0 +1,28 @@
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+body {
+	padding-top: 80px;
+	background: rgb(253, 255, 249);
+}
+
+span.fas {
+	color: #44cc00;
+	padding: .4rem;
+	margin-right: 1.7px;
+}
+
+a.navbar-brand {
+	font-size: 30px;
+    letter-spacing: .1rem;	
+	margin-right: 25px;
+	
+}
+
+ul li a.btn {
+	margin: .2rem;
+}

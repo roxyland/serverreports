@@ -1,0 +1,37 @@
+<% include ../partials/header %>
+
+<p>
+<!--
+    <ul>
+		<% servers.forEach(function(server) { %>
+			<li><%= server.name %> - <%= server.os %> - <%= server.vers %></li>
+		<% }); %>
+    </ul>
+-->
+
+    <div class="table-responsive">
+    <table class="table table-sm table-hover">
+		<thead class="thead-light">
+			<tr>
+			    <th scope="col">Name</th>
+			    <th scope="col">OS</th>
+			    <th scope="col">Version</th>
+			</tr>
+		</thead>
+		<tbody>
+        <% for (var i = 0; i < servers.length; i++) { %>
+            <tr>
+				<td><%= servers[i].name %></td>
+				<td><%= servers[i].os %></td>
+				<td><%= servers[i].vers %></td>
+		    </tr>
+        <% }; %>
+		</tbody>
+    </table>
+    </div>
+	
+</p>
+	
+
+
+<% include ../partials/footer %>
